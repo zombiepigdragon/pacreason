@@ -1,0 +1,7 @@
+post_install() {
+    # Pretend pacreason had been run to start with
+    /usr/bin/pacreason-hook pre-install
+}
+pre_remove() {
+    rm -f /var/lib/pacreason.status
+}

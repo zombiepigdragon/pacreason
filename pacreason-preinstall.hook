@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = *
+[Action]
+Description = Recording package status...
+Exec = /usr/bin/pacreason-hook pre-install
+When = PreTransaction
+Depends = pacreason
