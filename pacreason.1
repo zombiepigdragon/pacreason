@@ -1,0 +1,32 @@
+.TH PACREASON 1
+.SH NAME
+pacreason \- Remember why you installed a package
+.SH SYNOPSIS
+.B pacreason
+\fBget\fR \fIpackage...\fR
+.br
+.B pacreason
+\fBset\fR \fIpackage\fR \fIreason...\fR
+.SH DESCRIPTION
+.B pacreason
+provides utilities to record a note when installing a package and to retrieve that note later.
+It also provides a hook for
+.BR libalpm (3)
+that automatically uses the controlling TTY to ask for a reason whenever a new package is manually installed
+(e.g. with \fIpacman -S\fR).
+.SH EXAMPLES
+.TP \w'pacreason\ 'u
+\fBpacreason\fR \fIget\fR \fIpacreason\fR
+Read the reason why you installed
+.IR pacreason .
+.TP
+\fBpacreason\fR \fIset\fR \fIpacreason\fR \fI\"Remind myself why I install things\"\fR
+Overwrite/create the reason for installing
+.IR pacreason .
+.SH BUGS
+Bugs in
+.B pacreason
+can be reported to
+.UR https://github.com/zombiepigdragon/pacreason/issues
+the issue tracker
+.UE .
