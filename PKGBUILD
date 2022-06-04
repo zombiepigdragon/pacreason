@@ -1,6 +1,6 @@
 # Maintainer: Alex Rawson <ajzecrom@gmail.com>
 pkgname='pacreason'
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Remember why you installed a package'
 arch=('x86_64')
